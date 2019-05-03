@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -20,6 +20,7 @@ namespace Sem_IMTA_Restaurace.Views
             InitializeComponent();
 
             BindingContext = viewModel = new MainPageViewModel();
+            viewModel.FillRestaurants();
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
@@ -33,7 +34,6 @@ namespace Sem_IMTA_Restaurace.Views
 
         private void Map_Clicked(object sender, EventArgs e)
         {
-
         }
 
         private void Refresh_Clicked(object sender, EventArgs e)

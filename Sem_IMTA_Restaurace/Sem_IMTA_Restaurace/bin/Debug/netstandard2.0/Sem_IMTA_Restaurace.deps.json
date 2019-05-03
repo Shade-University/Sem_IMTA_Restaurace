@@ -12,7 +12,8 @@
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.2",
           "Xamarin.Essentials": "1.1.0",
-          "Xamarin.Forms": "3.6.0.344457"
+          "Xamarin.Forms": "3.6.0.344457",
+          "Mono.Android": "0.0.0.0"
         },
         "runtime": {
           "Sem_IMTA_Restaurace.dll": {}
@@ -66,6 +67,14 @@
             "fileVersion": "2.0.0.0"
           }
         }
+      },
+      "Mono.Android/0.0.0.0": {
+        "runtime": {
+          "Mono.Android.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
       }
     }
   },
@@ -116,6 +125,11 @@
       "sha512": "sha512-7IffIKgL0fmgbfCLKzXaFKJ7uOueKiz/BIgmAG1Z5WMn+vMKeALe5GgRs3Uddo670VzllIHWkNEZD3lG+e02bw==",
       "path": "xamarin.forms/3.6.0.344457",
       "hashPath": "xamarin.forms.3.6.0.344457.nupkg.sha512"
+    },
+    "Mono.Android/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

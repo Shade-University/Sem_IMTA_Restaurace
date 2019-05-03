@@ -30,7 +30,7 @@ namespace Sem_IMTA_Restaurace.Services
 
         public IEnumerable<Restaurant> GetRestaurantsByLocation(string latitude, string longitude)
         {
-            return GetRestaurants($"https://developers.zomato.com/api/v2.1/search?lat={latitude}&lon={longitude}");
+            return GetRestaurants($"https://developers.zomato.com/api/v2.1/search?q=lat={latitude}&lon={longitude}&sort=real_distance");
         }
 
         private IEnumerable<Restaurant> GetRestaurants(string url)

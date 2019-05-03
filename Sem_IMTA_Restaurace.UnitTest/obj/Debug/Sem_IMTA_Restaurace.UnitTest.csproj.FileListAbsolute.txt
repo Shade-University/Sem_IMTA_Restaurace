@@ -24,3 +24,6 @@ C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.UnitTest\bin\
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.UnitTest\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.UnitTest\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.UnitTest\obj\Debug\XamlC.stamp
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.UnitTest\bin\Debug\Mono.Android.dll
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.UnitTest\bin\Debug\Mono.Android.pdb
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.UnitTest\bin\Debug\Mono.Android.xml

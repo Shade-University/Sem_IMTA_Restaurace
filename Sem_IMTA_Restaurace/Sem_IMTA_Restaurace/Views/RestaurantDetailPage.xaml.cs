@@ -13,9 +13,11 @@ namespace Sem_IMTA_Restaurace.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RestaurantDetail : ContentPage
     {
+        RestaurantDetailViewModel viewModel;
         public RestaurantDetail(RestaurantDetailViewModel model)
         {
             InitializeComponent();
+            BindingContext = viewModel = model;
         }
     }
 }
