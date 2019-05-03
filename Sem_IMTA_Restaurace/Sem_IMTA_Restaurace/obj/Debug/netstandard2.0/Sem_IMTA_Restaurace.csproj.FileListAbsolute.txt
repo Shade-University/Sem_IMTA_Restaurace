@@ -1,0 +1,13 @@
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\bin\Debug\netstandard2.0\Sem_IMTA_Restaurace.deps.json
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\bin\Debug\netstandard2.0\Sem_IMTA_Restaurace.dll
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\bin\Debug\netstandard2.0\Sem_IMTA_Restaurace.pdb
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Debug\netstandard2.0\Sem_IMTA_Restaurace.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Debug\netstandard2.0\Sem_IMTA_Restaurace.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Debug\netstandard2.0\Sem_IMTA_Restaurace.AssemblyInfo.cs
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Debug\netstandard2.0\Sem_IMTA_Restaurace.dll
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Debug\netstandard2.0\Sem_IMTA_Restaurace.pdb
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Debug\netstandard2.0\Sem_IMTA_Restaurace.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Debug\netstandard2.0\Views\RestaurantDetailPage.xaml.g.cs
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Debug\netstandard2.0\Views\RestaurantsPage.xaml.g.cs
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Debug\netstandard2.0\XamlC.stamp
