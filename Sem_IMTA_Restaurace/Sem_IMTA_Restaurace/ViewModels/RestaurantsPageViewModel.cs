@@ -22,7 +22,7 @@ namespace Sem_IMTA_Restaurace.ViewModels
         private IRestaurantApi api;
         public MainPageViewModel()
         {
-            Title = "Restaurace";
+            Title = "Restaurants";
             Restaurants = new ObservableCollection<Restaurant>();
             LoadItemsCommand = new Command(() => RefreshListCommandExecute());
             store = new RestaurantDataStore();

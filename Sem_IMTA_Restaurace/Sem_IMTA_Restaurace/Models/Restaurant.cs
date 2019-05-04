@@ -12,17 +12,21 @@ namespace Sem_IMTA_Restaurace.Models
         public string Name { get; private set; }
         public string Url { get; private set; }
         public Location Location { get; private set; }
-        public string User_rating { get; private set; }
-        public string Image_url { get; private set; }
+        public Rating Rating { get; private set; }
+        public string Thumb_Image { get; private set; }
+        public string Feature_Image { get; private set; }
+        public string Menu_Url { get; private set; }
 
-        public Restaurant(string id, string name, string url, Location location, string user_rating, string image_url)
+        public Restaurant(string id, string name, string url, Location location, Rating rating, string thumb_Image, string feature_Image, string menu_Url)
         {
             Id = id;
             Name = name;
             Url = url;
             Location = location;
-            User_rating = user_rating;
-            Image_url = image_url;
+            Rating = rating;
+            Thumb_Image = string.IsNullOrEmpty(thumb_Image) ? "https://designermenus.com.au/wp-content/uploads/2016/02/icon-None.png" : thumb_Image;
+            Feature_Image = feature_Image;
+            Menu_Url = menu_Url;
         }
     }
 }

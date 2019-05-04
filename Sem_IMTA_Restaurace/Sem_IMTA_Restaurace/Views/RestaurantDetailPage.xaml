@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Sem_IMTA_Restaurace.Views.RestaurantDetail">
+             x:Class="Sem_IMTA_Restaurace.Views.RestaurantDetail"
+             Title="{Binding Restaurant.Name}">
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image Source="{Binding Restaurant.Feature_Image}"
+                       Aspect="AspectFill"
+                   HorizontalOptions="FillAndExpand"
+                       />
+            <Label Text="{Binding Restaurant.Location.City, StringFormat='City: {0}'}" HorizontalTextAlignment="Center"/>
+            <Label Text="{Binding Restaurant.Location.Address, StringFormat='Address: {0}'}" HorizontalTextAlignment="Center" />
+            <StackLayout 
+                    Orientation="Horizontal"
+                    Spacing="20">
+                <Label Text="{Binding Restaurant.Location.Longitude, StringFormat='Longitude: {0:N4}'}" />
+                <Label Text="{Binding Restaurant.Location.Latitude, StringFormat='Attitude: {0:N4}'}" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

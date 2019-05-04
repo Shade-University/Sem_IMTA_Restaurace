@@ -220,3 +220,4 @@ C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Rest
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Debug\81\android\assets\machine.config
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Debug\81\stamp\_CompileToDalvik.stamp
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Debug\81\stamp\_GeneratePackageManagerJava.stamp
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Debug\81\android\assets\System.Runtime.dll

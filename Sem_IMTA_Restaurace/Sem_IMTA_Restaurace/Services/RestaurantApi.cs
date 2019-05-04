@@ -4,6 +4,7 @@ using Sem_IMTA_Restaurace.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -30,7 +31,7 @@ namespace Sem_IMTA_Restaurace.Services
 
         public IEnumerable<Restaurant> GetRestaurantsByLocation(string latitude, string longitude)
         {
-            return GetRestaurants($"https://developers.zomato.com/api/v2.1/search?q=lat={latitude}&lon={longitude}&sort=real_distance");
+            return GetRestaurants($"https://developers.zomato.com/api/v2.1/search?q=czech&lat={latitude}&lon={longitude}&sort=real_distance");
         }
 
         private IEnumerable<Restaurant> GetRestaurants(string url)
@@ -55,9 +56,15 @@ namespace Sem_IMTA_Restaurace.Services
                 (string)r["restaurant"]["location"]["city"],
                 (string)r["restaurant"]["location"]["latitude"],
                 (string)r["restaurant"]["location"]["longitude"]
-            ),
-            (string)r["restaurant"]["user_rating"]["aggregate_rating"],
-            (string)r["restaurant"]["thumb"]
+                ),
+            new Rating(
+                (double)r["restaurant"]["user_rating"]["aggregate_rating"],
+                (string)r["restaurant"]["user_rating"]["rating_text"],
+                (int)r["restaurant"]["user_rating"]["votes"]
+                ),
+            (string)r["restaurant"]["thumb"],
+            (string)r["restaurant"]["featured_image"],
+            (string)r["restaurant"]["menu_url"]
             )
         ).ToList();
         }
