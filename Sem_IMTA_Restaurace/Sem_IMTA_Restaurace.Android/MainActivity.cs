@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace Sem_IMTA_Restaurace.Droid
 {
-    [Activity(Label = "Sem_IMTA_Restaurace", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Sem_IMTA_Restaurace", Icon = "@drawable/logoRestaurant", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

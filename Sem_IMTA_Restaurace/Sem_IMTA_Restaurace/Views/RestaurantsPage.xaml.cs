@@ -20,7 +20,6 @@ namespace Sem_IMTA_Restaurace.Views
             InitializeComponent();
 
             BindingContext = viewModel = new MainPageViewModel();
-            viewModel.FillRestaurants();
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)

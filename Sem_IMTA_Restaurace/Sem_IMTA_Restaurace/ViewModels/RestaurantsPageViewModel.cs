@@ -3,25 +3,26 @@ using Sem_IMTA_Restaurace.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Sem_IMTA_Restaurace.ViewModels
 {
-    class MainPageViewModel
+    class MainPageViewModel : BaseViewModel
     {
         public ObservableCollection<Restaurant> Restaurants { get; set; }
-        public string Title { get; set; }
         public Command LoadItemsCommand { get; set; }
-        
-        public bool IsBusy { get; set; }
 
         private IDataStore<Restaurant> store;
         private IRestaurantApi api;
+
         public MainPageViewModel()
         {
             Title = "Restaurants";
@@ -29,19 +30,25 @@ namespace Sem_IMTA_Restaurace.ViewModels
             LoadItemsCommand = new Command(() => RefreshListCommandExecute());
             store = new RestaurantDataStore();
             api = new RestaurantApi();
+            Task.Run(() => FillRestaurants());
+
         }
         public async void FillRestaurants()
         {
-            var location = await GetCurrentLocation();
-            string lat = location.Latitude.ToString();
-            string longi = location.Longitude.ToString();
-            //"50.0500", "15.7750")
-
-
-            foreach (Restaurant restaurant in api.GetRestaurantsByLocation(lat, longi))
+            if (!IsBusy)
             {
-                store.AddItem(restaurant);
-                Restaurants.Add(restaurant);
+                IsBusy = true;
+                var location = await GetCurrentLocation();
+                string lat = location.Latitude.ToString();
+                string longi = location.Longitude.ToString();
+
+                foreach (Restaurant restaurant in api.GetRestaurantsByLocation(lat, longi))
+                {
+                    store.AddItem(restaurant);
+                    Restaurants.Add(restaurant);
+                }
+                NotifyPropertyChanged(nameof(Restaurants));
+                IsBusy = false;
             }
         }
 
@@ -63,18 +70,21 @@ namespace Sem_IMTA_Restaurace.ViewModels
 
         private void RefreshListCommandExecute()
         {
-            try
+            if (!IsBusy)
             {
-                Restaurants.Clear();
-                var items = store.GetAllItems();
-                foreach (var item in items)
+                Task.Run(() =>
                 {
-                    Restaurants.Add(item);
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
+                    IsBusy = true;
+                    Restaurants.Clear();
+                    var items = store.GetAllItems();
+                    foreach (var item in items)
+                    {
+                        Restaurants.Add(item);
+                    }
+                    NotifyPropertyChanged(nameof(Restaurants));
+                    IsBusy = false;
+                });
+                
             }
         }
 

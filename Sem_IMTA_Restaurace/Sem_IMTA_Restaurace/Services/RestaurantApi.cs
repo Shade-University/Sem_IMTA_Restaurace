@@ -23,12 +23,6 @@ namespace Sem_IMTA_Restaurace.Services
             client.Headers.Add("Accept: application/json");
         }
 
-        public IEnumerable<Restaurant> GetRestaurantsByCity(string city)
-        {
-            return GetRestaurants("https://developers.zomato.com/api/v2.1/search?entity_type=city&q=Pardubice&count=20");
-            //TODO Nějak jinak
-        }
-
         public IEnumerable<Restaurant> GetRestaurantsByLocation(string latitude, string longitude)
         {
             return GetRestaurants($"https://developers.zomato.com/api/v2.1/search?q=czech&lat={latitude}&lon={longitude}&sort=real_distance");

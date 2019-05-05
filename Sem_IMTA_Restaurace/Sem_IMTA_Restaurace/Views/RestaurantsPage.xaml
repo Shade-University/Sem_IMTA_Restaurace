@@ -11,7 +11,7 @@
     <StackLayout>
         <ActivityIndicator 
             IsVisible="{Binding IsBusy}" 
-    I       IsRunning="{Binding IsBusy}" />
+            IsRunning="{Binding IsBusy}"/>
 
         <ListView x:Name="RestaurantsListView"
                 ItemsSource="{Binding Restaurants}"
