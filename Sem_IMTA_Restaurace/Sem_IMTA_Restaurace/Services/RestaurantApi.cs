@@ -54,8 +54,8 @@ namespace Sem_IMTA_Restaurace.Services
             new Location(
                 (string)r["restaurant"]["location"]["address"],
                 (string)r["restaurant"]["location"]["city"],
-                (string)r["restaurant"]["location"]["latitude"],
-                (string)r["restaurant"]["location"]["longitude"]
+                (double)r["restaurant"]["location"]["latitude"],
+                (double)r["restaurant"]["location"]["longitude"]
                 ),
             new Rating(
                 (double)r["restaurant"]["user_rating"]["aggregate_rating"],

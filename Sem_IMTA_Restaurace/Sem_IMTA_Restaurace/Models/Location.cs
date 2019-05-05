@@ -8,10 +8,10 @@ namespace Sem_IMTA_Restaurace.Models
     {
         public string Address { get; private set; }
         public string City { get; private set; }
-        public string Latitude { get; private set; }
-        public string Longitude { get; private set; }
+        public double Latitude { get; private set; }
+        public double Longitude { get; private set; }
 
-        public Location(string address, string city, string latitude, string longitude)
+        public Location(string address, string city, double latitude, double longitude)
         {
             Address = address;
             City = city;

@@ -4,20 +4,86 @@
              x:Class="Sem_IMTA_Restaurace.Views.RestaurantDetail"
              Title="{Binding Restaurant.Name}">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Map" Clicked="Map_Clicked" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <Image Source="{Binding Restaurant.Feature_Image}"
                        Aspect="AspectFill"
-                   HorizontalOptions="FillAndExpand"
-                       />
-            <Label Text="{Binding Restaurant.Location.City, StringFormat='City: {0}'}" HorizontalTextAlignment="Center"/>
-            <Label Text="{Binding Restaurant.Location.Address, StringFormat='Address: {0}'}" HorizontalTextAlignment="Center" />
-            <StackLayout 
-                    Orientation="Horizontal"
-                    Spacing="20">
-                <Label Text="{Binding Restaurant.Location.Longitude, StringFormat='Longitude: {0:N4}'}" />
-                <Label Text="{Binding Restaurant.Location.Latitude, StringFormat='Attitude: {0:N4}'}" />
-            </StackLayout>
+                   HorizontalOptions="FillAndExpand"/>
+            <Grid Padding="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="City: " FontAttributes="Bold"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Restaurant.Location.City}"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="Address: " FontAttributes="Bold"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Restaurant.Location.Address}"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Longitude: " FontAttributes="Bold" />
+                <Label Grid.Row="2" Grid.Column="1" Text="{Binding Restaurant.Location.Longitude}" />
+                <Label Grid.Row="3" Grid.Column="0" Text="Latitude: " FontAttributes="Bold" />
+                <Label Grid.Row="3" Grid.Column="1" Text="{Binding Restaurant.Location.Latitude}" />
+
+                <Label Grid.Row="5" Grid.Column="0" Text="Rating: " FontAttributes="Bold" />
+                <Label Grid.Row="5" Grid.Column="1" Text="{Binding Restaurant.Rating.Rating_Value}" />
+                <Label Grid.Row="6" Grid.Column="0" Text="Rating text: " FontAttributes="Bold" />
+                <Label Grid.Row="6" Grid.Column="1" Text="{Binding Restaurant.Rating.Rating_Text}" />
+                <Label Grid.Row="7" Grid.Column="0" Text="Votes: " FontAttributes="Bold" />
+                <Label Grid.Row="7" Grid.Column="1" Text="{Binding Restaurant.Rating.Votes}" />
+
+                <Label Grid.Row="9" Grid.Column="0" Text="Url: " FontAttributes="Bold" />
+                <Label Grid.Row="9" Grid.Column="1">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Restaurant Page"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ClickCommand}"
+                                          CommandParameter="{Binding Restaurant.Url}" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label Grid.Row="10" Grid.Column="0" Text="Menu: " FontAttributes="Bold" />
+
+                <Label Grid.Row="10" Grid.Column="1">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Menu Page"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ClickCommand}"
+                                          CommandParameter="{Binding Restaurant.Menu_Url}" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
         </StackLayout>
+
     </ContentPage.Content>
+
 </ContentPage>

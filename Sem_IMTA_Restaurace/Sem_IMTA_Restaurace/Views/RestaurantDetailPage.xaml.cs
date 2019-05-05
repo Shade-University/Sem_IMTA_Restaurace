@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,6 +18,21 @@ namespace Sem_IMTA_Restaurace.Views
         {
             InitializeComponent();
             BindingContext = viewModel = model;
+        }
+
+        public void Map_Clicked(object sender, EventArgs e)
+        {
+            MapLaunchOptions options = new MapLaunchOptions()
+            {
+                Name = viewModel.Restaurant.Location.Address,
+                NavigationMode = NavigationMode.Driving
+            };
+            Location location = new Location()
+            {
+                Latitude = viewModel.Restaurant.Location.Latitude,
+                Longitude = viewModel.Restaurant.Location.Longitude
+            };
+            Map.OpenAsync(location, options);
         }
     }
 }

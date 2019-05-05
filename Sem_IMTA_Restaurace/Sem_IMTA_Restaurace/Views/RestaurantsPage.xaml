@@ -6,10 +6,13 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Refresh" Command="{Binding LoadItemsCommand}" />
-        <ToolbarItem Text="Map" Clicked="Map_Clicked" />
     </ContentPage.ToolbarItems>
 
     <StackLayout>
+        <ActivityIndicator 
+            IsVisible="{Binding IsBusy}" 
+    I       IsRunning="{Binding IsBusy}" />
+
         <ListView x:Name="RestaurantsListView"
                 ItemsSource="{Binding Restaurants}"
                 VerticalOptions="FillAndExpand"

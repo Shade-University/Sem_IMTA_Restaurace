@@ -31,14 +31,5 @@ namespace Sem_IMTA_Restaurace.Views
 
             await Navigation.PushAsync(new RestaurantDetail(new RestaurantDetailViewModel(item)));
         }
-
-        private void Map_Clicked(object sender, EventArgs e)
-        {
-        }
-
-        private void Refresh_Clicked(object sender, EventArgs e)
-        {
-
-        }
     }
 }

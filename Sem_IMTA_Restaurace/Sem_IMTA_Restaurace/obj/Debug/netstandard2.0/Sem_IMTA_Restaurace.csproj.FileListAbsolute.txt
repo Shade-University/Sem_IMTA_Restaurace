@@ -15,4 +15,3 @@ C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Rest
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\bin\Debug\netstandard2.0\Mono.Android.xml
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Debug\netstandard2.0\Sem_IMTA_Restaurace.csproj.CopyComplete
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Debug\netstandard2.0\Sem_IMTA_Restaurace.csprojAssemblyReference.cache
-C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Debug\netstandard2.0\Views\Test.xaml.g.cs

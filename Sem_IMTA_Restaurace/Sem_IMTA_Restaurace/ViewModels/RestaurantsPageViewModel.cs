@@ -17,6 +17,8 @@ namespace Sem_IMTA_Restaurace.ViewModels
         public ObservableCollection<Restaurant> Restaurants { get; set; }
         public string Title { get; set; }
         public Command LoadItemsCommand { get; set; }
+        
+        public bool IsBusy { get; set; }
 
         private IDataStore<Restaurant> store;
         private IRestaurantApi api;
