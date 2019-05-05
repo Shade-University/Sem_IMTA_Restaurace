@@ -228,3 +228,5 @@ C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Rest
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Debug\81\res\drawable-xhdpi\logorestaurant.png
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Debug\81\res\drawable-xxhdpi\logorestaurant.png
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Debug\81\res\drawable-xxxhdpi\logorestaurant.png
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Debug\81\res\drawable\splash.png
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Debug\81\res\drawable\splash_screen.xml

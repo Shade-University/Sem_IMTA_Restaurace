@@ -5,18 +5,20 @@
              Title="{Binding Title}">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Refresh" Command="{Binding LoadItemsCommand}" />
+        <ToolbarItem Text="Refresh" Command="{Binding ReloadItemsCommand}" />
     </ContentPage.ToolbarItems>
 
     <StackLayout>
         <ActivityIndicator 
             IsVisible="{Binding IsBusy}" 
             IsRunning="{Binding IsBusy}"/>
-
+        <Label Text="{Binding Error_Text}" TextColor="Red" HorizontalTextAlignment="Center"/>
         <ListView x:Name="RestaurantsListView"
                 ItemsSource="{Binding Restaurants}"
                 VerticalOptions="FillAndExpand"
                 HasUnevenRows="true"
+                RefreshCommand="LoadItemsCommad"
+                IsPullToRefreshEnabled="true"
                 CachingStrategy="RecycleElement"
                 ItemSelected="OnItemSelected">
             <ListView.ItemTemplate>

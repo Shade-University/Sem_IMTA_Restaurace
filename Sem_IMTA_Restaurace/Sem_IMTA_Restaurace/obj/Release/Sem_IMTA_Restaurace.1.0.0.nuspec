@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Sem_IMTA_Restaurace</id>
+    <version>1.0.0</version>
+    <authors>Sem_IMTA_Restaurace</authors>
+    <owners>Sem_IMTA_Restaurace</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Newtonsoft.Json" version="12.0.2" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Essentials" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms" version="3.6.0.344457" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\bin\Release\netstandard2.0\Sem_IMTA_Restaurace.dll" target="lib\netstandard2.0\Sem_IMTA_Restaurace.dll" />
+  </files>
+</package>

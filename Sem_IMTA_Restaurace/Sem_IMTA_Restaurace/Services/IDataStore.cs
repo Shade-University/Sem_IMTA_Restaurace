@@ -11,5 +11,7 @@ namespace Sem_IMTA_Restaurace.Services
         void DeleteItem(string id);
         T GetItem(string id);
         IEnumerable<T> GetAllItems();
+
+        void RemoveAll();
     }
 }

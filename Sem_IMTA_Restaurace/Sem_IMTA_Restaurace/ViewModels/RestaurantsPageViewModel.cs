@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
@@ -19,6 +20,21 @@ namespace Sem_IMTA_Restaurace.ViewModels
     {
         public ObservableCollection<Restaurant> Restaurants { get; set; }
         public Command LoadItemsCommand { get; set; }
+        public Command ReloadItemsCommand { get; set; }
+        
+        private string error;
+        public string Error_Text
+        {
+            get
+            {
+                return error;
+            }
+            set
+            {
+                error = value;
+                NotifyPropertyChanged(nameof(Error_Text));
+            }
+        }
 
         private IDataStore<Restaurant> store;
         private IRestaurantApi api;
@@ -28,26 +44,46 @@ namespace Sem_IMTA_Restaurace.ViewModels
             Title = "Restaurants";
             Restaurants = new ObservableCollection<Restaurant>();
             LoadItemsCommand = new Command(() => RefreshListCommandExecute());
+            ReloadItemsCommand = new Command(() => FillRestaurants());
             store = new RestaurantDataStore();
             api = new RestaurantApi();
-            Task.Run(() => FillRestaurants());
+            FillRestaurants();
 
         }
-        public async void FillRestaurants()
+        private async void FillRestaurants()
         {
             if (!IsBusy)
             {
                 IsBusy = true;
                 var location = await GetCurrentLocation();
+                if(location == null)
+                {
+                    store.RemoveAll();
+                    Restaurants.Clear();
+                    isBusy = false;
+                    return;
+                }
                 string lat = location.Latitude.ToString();
                 string longi = location.Longitude.ToString();
-
-                foreach (Restaurant restaurant in api.GetRestaurantsByLocation(lat, longi))
+                try
                 {
-                    store.AddItem(restaurant);
-                    Restaurants.Add(restaurant);
+                    foreach (Restaurant restaurant in api.GetRestaurantsByLocation(lat, longi))
+                    {
+                        store.AddItem(restaurant);
+                        Restaurants.Add(restaurant);
+                    }
+                    NotifyPropertyChanged(nameof(Restaurants));
                 }
-                NotifyPropertyChanged(nameof(Restaurants));
+                catch(WebException ex)
+                {
+                    Console.WriteLine(ex);
+                    Error_Text = "Could not connect to internet";
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine(ex);
+                    Error_Text = "Error parsing json";
+                }
                 IsBusy = false;
             }
         }
@@ -61,7 +97,8 @@ namespace Sem_IMTA_Restaurace.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex); //Unable to get location
+                Console.WriteLine(ex);
+                Error_Text = "Could not get location";
             }
 
             return location;

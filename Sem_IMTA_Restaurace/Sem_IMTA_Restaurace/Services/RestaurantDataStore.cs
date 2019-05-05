@@ -30,6 +30,11 @@ namespace Sem_IMTA_Restaurace.Services
             return restaurants.Find(restaurant => restaurant.Id.Equals(id));
         }
 
+        public void RemoveAll()
+        {
+            restaurants.Clear();
+        }
+
         public void UpdateItem(Restaurant item)
         {
             throw new NotImplementedException();

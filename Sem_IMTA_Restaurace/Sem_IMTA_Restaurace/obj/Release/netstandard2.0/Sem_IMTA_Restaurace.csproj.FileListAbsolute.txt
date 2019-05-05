@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\bin\Release\netstandard2.0\Sem_IMTA_Restaurace.deps.json
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\bin\Release\netstandard2.0\Sem_IMTA_Restaurace.dll
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\bin\Release\netstandard2.0\Sem_IMTA_Restaurace.pdb
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\bin\Release\netstandard2.0\Mono.Android.dll
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\bin\Release\netstandard2.0\Mono.Android.pdb
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\bin\Release\netstandard2.0\Mono.Android.xml
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\Views\RestaurantDetailPage.xaml.g.cs
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\Views\RestaurantsPage.xaml.g.cs
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\Sem_IMTA_Restaurace.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\Sem_IMTA_Restaurace.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\Sem_IMTA_Restaurace.AssemblyInfo.cs
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\Sem_IMTA_Restaurace.csproj.CopyComplete
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\Sem_IMTA_Restaurace.dll
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\Sem_IMTA_Restaurace.pdb
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\Sem_IMTA_Restaurace.csprojAssemblyReference.cache
