@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Sem_IMTA_Restaurace.Models;
 
@@ -8,7 +6,7 @@ namespace Sem_IMTA_Restaurace.Services
 {
     class RestaurantDataStore : IDataStore<Restaurant>
     {
-        private List<Restaurant> restaurants = new List<Restaurant>();
+        private readonly List<Restaurant> restaurants = new List<Restaurant>();
         public void AddItem(Restaurant item)
         {
             restaurants.Add(item);
@@ -16,7 +14,7 @@ namespace Sem_IMTA_Restaurace.Services
 
         public void DeleteItem(string id)
         {
-            Restaurant restaurantToRemove = restaurants.Find(restaurant => restaurant.Id.Equals(id));
+            Restaurant restaurantToRemove = GetItem(id);
             restaurants.Remove(restaurantToRemove);
         }
 
@@ -37,7 +35,8 @@ namespace Sem_IMTA_Restaurace.Services
 
         public void UpdateItem(Restaurant item)
         {
-            throw new NotImplementedException();
+            DeleteItem(item.Id);
+            AddItem(item);
         }
     }
 }

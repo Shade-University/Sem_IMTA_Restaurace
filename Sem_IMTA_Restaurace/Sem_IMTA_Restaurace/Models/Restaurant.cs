@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Drawing;
-using Xamarin.Forms;
-
-namespace Sem_IMTA_Restaurace.Models
+﻿namespace Sem_IMTA_Restaurace.Models
 {
     public class Restaurant
     {

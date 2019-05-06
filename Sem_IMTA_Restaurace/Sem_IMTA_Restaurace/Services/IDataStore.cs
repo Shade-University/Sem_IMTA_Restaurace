@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Sem_IMTA_Restaurace.Services
 {
@@ -11,7 +9,6 @@ namespace Sem_IMTA_Restaurace.Services
         void DeleteItem(string id);
         T GetItem(string id);
         IEnumerable<T> GetAllItems();
-
         void RemoveAll();
     }
 }

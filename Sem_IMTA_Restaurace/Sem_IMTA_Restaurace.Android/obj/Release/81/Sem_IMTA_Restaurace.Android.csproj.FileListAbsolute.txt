@@ -1,5 +1,7 @@
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\bin\Release\Sem_IMTA_Restaurace.Android.dll
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\bin\Release\Sem_IMTA_Restaurace.Android.pdb
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\bin\Release\com.companyname.Sem_IMTA_Restaurace.apk
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\bin\Release\com.companyname.Sem_IMTA_Restaurace-Signed.apk
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\bin\Release\Sem_IMTA_Restaurace.Android.dll.mdb
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\bin\Release\FormsViewGroup.pdb
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\bin\Release\Mono.Android.pdb
@@ -38,6 +40,7 @@ C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Rest
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\Sem_IMTA_Restaurace.Android.csproj.CopyComplete
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\Sem_IMTA_Restaurace.Android.dll
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\Sem_IMTA_Restaurace.Android.pdb
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\android\bin\com.companyname.Sem_IMTA_Restaurace.apk
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\layout\tabbar.xml
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\layout\toolbar.xml
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\values\styles.xml
@@ -55,6 +58,7 @@ C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Rest
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\mipmap-xxxhdpi\icon.png
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\mipmap-xxxhdpi\launcher_foreground.png
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\drawable\xamarin_logo.png
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\drawable\splash.png
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\drawable\logorestaurant.png
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\drawable-hdpi\xamarin_logo.png
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\drawable-xhdpi\xamarin_logo.png
@@ -62,6 +66,7 @@ C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Rest
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\drawable-xhdpi\logorestaurant.png
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\drawable-xxhdpi\logorestaurant.png
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\drawable-xxxhdpi\logorestaurant.png
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\res\drawable\splash_screen.xml
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\R.cs.flag
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\R.txt
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\uploadflags.txt
@@ -211,7 +216,3 @@ C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Rest
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\android\assets\machine.config
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\stamp\_CompileToDalvik.stamp
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\stamp\_GeneratePackageManagerJava.stamp
-C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\android\assets\System.Runtime.dll
-C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\bin\Release\com.companyname.Sem_IMTA_Restaurace.apk
-C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\bin\Release\com.companyname.Sem_IMTA_Restaurace-Signed.apk
-C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace.Android\obj\Release\81\android\bin\com.companyname.Sem_IMTA_Restaurace.apk

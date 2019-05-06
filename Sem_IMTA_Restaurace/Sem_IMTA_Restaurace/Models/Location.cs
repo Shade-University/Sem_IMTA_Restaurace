@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Sem_IMTA_Restaurace.Models
+﻿namespace Sem_IMTA_Restaurace.Models
 {
     public class Location
     {

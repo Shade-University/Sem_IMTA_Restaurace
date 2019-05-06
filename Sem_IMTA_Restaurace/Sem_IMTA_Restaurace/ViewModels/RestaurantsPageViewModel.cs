@@ -1,15 +1,8 @@
 ﻿using Sem_IMTA_Restaurace.Models;
 using Sem_IMTA_Restaurace.Services;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Linq;
 using System.Net;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -36,8 +29,8 @@ namespace Sem_IMTA_Restaurace.ViewModels
             }
         }
 
-        private IDataStore<Restaurant> store;
-        private IRestaurantApi api;
+        private readonly IDataStore<Restaurant> store;
+        private readonly IRestaurantApi api;
 
         public MainPageViewModel()
         {
@@ -48,7 +41,6 @@ namespace Sem_IMTA_Restaurace.ViewModels
             store = new RestaurantDataStore();
             api = new RestaurantApi();
             FillRestaurants();
-
         }
         private async void FillRestaurants()
         {
@@ -58,11 +50,10 @@ namespace Sem_IMTA_Restaurace.ViewModels
                 var location = await GetCurrentLocation();
                 if(location == null)
                 {
-                    store.RemoveAll();
-                    Restaurants.Clear();
                     isBusy = false;
                     return;
                 }
+
                 string lat = location.Latitude.ToString();
                 string longi = location.Longitude.ToString();
                 try
@@ -73,16 +64,17 @@ namespace Sem_IMTA_Restaurace.ViewModels
                         Restaurants.Add(restaurant);
                     }
                     NotifyPropertyChanged(nameof(Restaurants));
+                    Error_Text = string.Empty;
                 }
                 catch(WebException ex)
                 {
                     Console.WriteLine(ex);
-                    Error_Text = "Could not connect to internet";
+                    Error_Text = "Could not connect to internet. Data not updated";
                 }
                 catch(Exception ex)
                 {
                     Console.WriteLine(ex);
-                    Error_Text = "Error parsing json";
+                    Error_Text = "Error parsing json. Data not updated";
                 }
                 IsBusy = false;
             }
@@ -98,7 +90,7 @@ namespace Sem_IMTA_Restaurace.ViewModels
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
-                Error_Text = "Could not get location";
+                Error_Text = "Could not get location. Data not updated";
             }
 
             return location;

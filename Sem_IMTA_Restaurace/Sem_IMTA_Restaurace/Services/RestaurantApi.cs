@@ -1,14 +1,8 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using Sem_IMTA_Restaurace.Models;
-using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Globalization;
 using System.Linq;
 using System.Net;
-using System.Text;
-using Xamarin.Forms;
 
 namespace Sem_IMTA_Restaurace.Services
 {
@@ -16,7 +10,7 @@ namespace Sem_IMTA_Restaurace.Services
     {
         private const string API_KEY = "981bcaa15032666ff422b1b3dbeaafe3";
 
-        private WebClient client = new WebClient();
+        private readonly WebClient client = new WebClient();
         public RestaurantApi()
         {
             client.Headers.Add($"user-key: {API_KEY}");

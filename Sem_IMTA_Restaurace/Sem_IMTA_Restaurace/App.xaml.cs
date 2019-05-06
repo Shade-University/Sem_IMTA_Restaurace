@@ -1,6 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 using Sem_IMTA_Restaurace.Views;
 using Sem_IMTA_Restaurace.Services;
 

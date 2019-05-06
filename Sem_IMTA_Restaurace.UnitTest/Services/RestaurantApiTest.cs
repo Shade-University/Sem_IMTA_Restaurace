@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sem_IMTA_Restaurace.Models;
@@ -23,13 +22,6 @@ namespace Sem_IMTA_Restaurace.UnitTest.Services
         {
         }
 
-        [TestMethod]
-        public void GetRestaurantsByCityTest()
-        {
-            IEnumerable<Restaurant> restaurants = api.GetRestaurantsByCity("Pardubice");
-
-            Assert.AreEqual(restaurants.First().Id, "16513985");
-        }
 
         [TestMethod]
         public void GetRestaurantsByLocationTest()

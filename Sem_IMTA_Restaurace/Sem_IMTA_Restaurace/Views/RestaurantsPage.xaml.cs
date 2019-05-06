@@ -1,11 +1,5 @@
 ﻿using Sem_IMTA_Restaurace.Models;
 using Sem_IMTA_Restaurace.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -24,8 +18,7 @@ namespace Sem_IMTA_Restaurace.Views
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            var item = args.SelectedItem as Restaurant;
-            if (item == null)
+            if (!(args.SelectedItem is Restaurant item))
                 return;
 
             await Navigation.PushAsync(new RestaurantDetail(new RestaurantDetailViewModel(item)));
