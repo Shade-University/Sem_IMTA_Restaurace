@@ -14,7 +14,7 @@ namespace Sem_IMTA_Restaurace.ViewModels
         public ObservableCollection<Restaurant> Restaurants { get; set; }
         public Command LoadItemsCommand { get; set; }
         public Command ReloadItemsCommand { get; set; }
-        
+
         private string error;
         public string Error_Text
         {
@@ -47,18 +47,17 @@ namespace Sem_IMTA_Restaurace.ViewModels
             if (!IsBusy)
             {
                 IsBusy = true;
-                var location = await GetCurrentLocation();
-                if(location == null)
-                {
-                    isBusy = false;
-                    return;
-                }
-
-                string lat = location.Latitude.ToString();
-                string longi = location.Longitude.ToString();
                 try
                 {
-                    foreach (Restaurant restaurant in api.GetRestaurantsByLocation(lat, longi))
+                    var location = await Geolocation.GetLocationAsync();
+                    string lat = location.Latitude.ToString();
+                    string longi = location.Longitude.ToString();
+
+                    var restaurants = api.GetRestaurantsByLocation(lat, longi);
+
+                    store.RemoveAll();
+                    Restaurants.Clear();
+                    foreach (Restaurant restaurant in restaurants)
                     {
                         store.AddItem(restaurant);
                         Restaurants.Add(restaurant);
@@ -66,35 +65,18 @@ namespace Sem_IMTA_Restaurace.ViewModels
                     NotifyPropertyChanged(nameof(Restaurants));
                     Error_Text = string.Empty;
                 }
-                catch(WebException ex)
+                catch (WebException ex)
                 {
                     Console.WriteLine(ex);
                     Error_Text = "Could not connect to internet. Data not updated";
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     Console.WriteLine(ex);
-                    Error_Text = "Error parsing json. Data not updated";
+                    Error_Text = "Could not get your gps location. Data not updated";
                 }
                 IsBusy = false;
             }
-        }
-
-        private async Task<Xamarin.Essentials.Location> GetCurrentLocation()
-        {
-            Xamarin.Essentials.Location location = null;
-            try
-            {
-                location = await Geolocation.GetLocationAsync();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-                Error_Text = "Could not get location. Data not updated";
-            }
-
-            return location;
-
         }
 
         private void RefreshListCommandExecute()
@@ -113,7 +95,7 @@ namespace Sem_IMTA_Restaurace.ViewModels
                     NotifyPropertyChanged(nameof(Restaurants));
                     IsBusy = false;
                 });
-                
+
             }
         }
 

@@ -14,3 +14,4 @@ C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Rest
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\Sem_IMTA_Restaurace.csproj.CopyComplete
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\Sem_IMTA_Restaurace.dll
 C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\Sem_IMTA_Restaurace.pdb
+C:\Users\user\source\repos\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\Sem_IMTA_Restaurace\obj\Release\netstandard2.0\Sem_IMTA_Restaurace.csprojAssemblyReference.cache
